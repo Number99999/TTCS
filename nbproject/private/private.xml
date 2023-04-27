@@ -3,10 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/MSII/OneDrive/Máy%20tính/ttcs/src/java/controller/addUser.java</file>
-            <file>file:/C:/Users/MSII/OneDrive/Máy%20tính/ttcs/src/java/model/product.java</file>
-            <file>file:/C:/Users/MSII/OneDrive/Máy%20tính/ttcs/src/java/controller/addProduct.java</file>
-            <file>file:/C:/Users/MSII/OneDrive/Máy%20tính/ttcs/src/java/model/Oder.java</file>
+            <file>file:/C:/Users/MSII/OneDrive/Máy%20tính/webBanHang/src/java/controller/oderAdmin.java</file>
+            <file>file:/C:/Users/MSII/OneDrive/Máy%20tính/webBanHang/web/orderAdmin.jsp</file>
+            <file>file:/C:/Users/MSII/OneDrive/Máy%20tính/webBanHang/src/java/controller/OderedController.java</file>
+            <file>file:/C:/Users/MSII/OneDrive/Máy%20tính/webBanHang/src/java/DAO/DAO.java</file>
+            <file>file:/C:/Users/MSII/OneDrive/Máy%20tính/webBanHang/web/index.jsp</file>
+            <file>file:/C:/Users/MSII/OneDrive/Máy%20tính/webBanHang/src/java/model/donHang.java</file>
         </group>
     </open-files>
 </project-private>

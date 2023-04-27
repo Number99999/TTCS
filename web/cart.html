@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <link rel="stylesheet" href="plugins/animate/animate.min.css">
+
+        <link rel="stylesheet" href="plugins/fontawesome/all.css">
+
+        <link href="plugins/webfonts/font.css"
+              rel="stylesheet">
+        <link rel="stylesheet" href="plugins/owl.carousel/owl.carousel.min.css" type="text/css">
+        <link rel="stylesheet" href="plugins/owl.carousel/owl.theme.default.min.css">
+        <!-- UIkit CSS -->
+        <link rel="stylesheet" href="plugins/uikit/uikit.min.css" />
+
+
+        <title>Giỏ hàng</title>
+
+    </head>
+
+    <body>
+        <div class="header">
+            <a style="color: #ffffff;text-decoration: none;" href="home">MIỄN PHÍ VẬN CHUYỂN VỚI ĐƠN HÀNG NỘI THÀNH > 300K
+                - ĐỔI TRẢ TRONG 30 NGÀY - ĐẢM BẢO CHẤT LƯỢNG</a>
+        </div>
+
+        <!--Navbar-->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+
+            <div class="container">
+                <a class="navbar-brand" href="home">
+                    <img src="images/logo.png" class="logo-top" alt="">
+                </a>
+                <div class="desk-menu collapse navbar-collapse justify-content-md-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home">TRANG CHỦ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product.jsp">BỘ SƯU TẬP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" >SẢN PHẨM
+                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </a>
+                            <ul class="sub_menu">
+                                <li class="">
+                                    <a href="categories?cname=áo" title="Sản phẩm - Style 1"> <!--a thay cho áo -->
+                                        Danh sách sản phẩm áo
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="categories?cname=giày" title="Sản phẩm - Style 2"> <!-- g thay cho giày -->
+                                        Danh sách sản phẩm giày
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="categories?cname=ví" title="Sản phẩm - Style 3"> <!--v thay cho ví -->
+                                        Danh sách sản phẩm ví
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="introduce.jsp">GIỚI THIỆU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.jsp">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">LIÊN HỆ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="offcanvas-flip1" uk-offcanvas="flip: true; overlay: true">
+                    <div class="uk-offcanvas-bar" style="background: white;
+                         width: 350px;">
+
+                        <button class="uk-offcanvas-close" style="color:#272727" type="button" uk-close>alo</button>
+                        <h3 style="font-size: 14px;
+                            color: #272727;
+                            text-transform: uppercase;
+                            margin: 3px 0 30px 0;
+                            font-weight: 500; letter-spacing: 2px;">MENU</h3>
+                        <div class="justify-content-md-center">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="home">TRANG CHỦ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="product.jsp">BỘ SƯU TẬP</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                       aria-haspopup="true" aria-expanded="false">
+                                        Sản phẩm
+
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="border:0;">
+                                        <a class="dropdown-item" href="  " title="Sản phẩm - Style 1">Sản phẩm - Style 1</a>
+                                        <a class="dropdown-item" href="  " title="Sản phẩm - Style 2">Sản phẩm - Style 2</a>
+                                        <a class="dropdown-item" href="  " title="Sản phẩm - Style 3">Sản phẩm - Style 3</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="introduce.jsp">GIỚI THIỆU</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="blog.jsp">BLOG</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">LIÊN HỆ</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+                    <div class="uk-offcanvas-bar" style="    background: white;
+                         width: 350px;">
+
+                        <button class="uk-offcanvas-close" style="color:#272727" type="button" uk-close></button>
+
+                        <h3 style="font-size: 14px;
+                            color: #272727;
+                            text-transform: uppercase;
+                            margin: 3px 0 30px 0;
+                            font-weight: 500; letter-spacing: 2px;">Tìm kiếm</h3>
+                        <div class="search-box wpo-wrapper-search">
+                            <form action="search" class="searchform searchform-categoris ultimate-search">
+                                <div class="wpo-search-inner" style="display:inline">
+                                    <input type="hidden" name="type" value="product">
+                                    <input required="" id="inputSearchAuto" name="q" maxlength="40" autocomplete="off"
+                                           class="searchinput input-search search-input" type="text" size="20"
+                                           placeholder="Tìm kiếm sản phẩm...">
+                                </div>
+                                <button type="submit" class="btn-search btn" id="search-header-btn">
+                                    <i style="font-weight:bold" class="fas fa-search"></i>
+                                </button>
+                            </form>
+                            <div class="icon-ol">
+                                <a style="color: #272727" href="">Chào ${user.username}!</a>
+                                <a style="color: #272727" href="logout">   
+                                    <i class="fas fa-user-alt">Đăng xuất</i>
+                                </a>
+                                <a style="color: #272727" href="">Quản lí sản phẩm</a>
+                                <a style="color: #272727" href="signin.html">  
+                                    <i class="fas fa-user-alt">Đăng nhập</i></a>
+                                <a href="#" class="" uk-toggle="target: #offcanvas-flip">
+                                    <i class="fas fa-search" style="color: black"></i>
+                                </a>
+
+                                <a style="color: #272727" href="cart" uk-toggle="target: #offcanvas-flip2">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                                <button class="navbar-toggler" type="button" uk-toggle="target: #offcanvas-flip1" data-target="#navbarNav"
+                                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                            </div>
+                        </div>  
+
+                    </div>
+                </div>
+
+                <div class="icon-ol">
+                    <a style="color: #272727" href="">
+                        <i class="fas fa-user-alt"></i>
+                    </a>
+                    <a href="#" class="" uk-toggle="target: #offcanvas-flip">
+                        <i class="fas fa-search" style="color: black"></i>
+                    </a>
+
+                    <a style="color: #272727" href="cart" uk-toggle="target: #offcanvas-flip2">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <button class="navbar-toggler" type="button" uk-toggle="target: #offcanvas-flip1" data-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <!--Banner-->
+    <div>
+        <div>
+            <img src="images/collection_banner.jpg" alt="Products">
+        </div>
+    </div>
+    <div class="breadcrumb-shop">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pd5">
+                    <ol class="breadcrumb breadcrumb-arrows">
+                        <li>
+                            <a href="home">
+                                <span>Trang chủ</span>
+                            </a>
+                        </li>
+                        <li>
+                            <span><span style="color: #777777">Tin tức</span></span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 class="text-center">Giỏ hàng</h2>
+    <div class="container"> 
+        <table id="cart" class="table table-hover table-condensed"> 
+            <thead> 
+                <tr> 
+                    <th style="width:50%">Hình ảnh</th>
+                    <th style="width:20%">Tên sản phẩm</th> 
+                    <th style="width:10%">Giá</th> 
+                    <th style="width:8%">Số lượng</th> 
+                    <th style="width:22%" class="text-center">Thành tiền</th> 
+                    <th style="width:0%"> </th> 
+                </tr> 
+            </thead> 
+            <tbody>
+            <c:forEach items="list" var="o">
+                <tr>\
+                    <td data-th="Product"> 
+                        <div class="row"> 
+                            <div class="col-sm-2 hidden-xs"><img src="data:image/jpeg;base64,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" alt="Sản phẩm 1" class="img-responsive" width="100">
+                            </div> 
+                            <div class="col-sm-10"> 
+                                <h4 class="nomargin">Sản phẩm</h4> 
+                            </div> 
+                        </div> 
+                    </td> 
+                    <td>Tên sản phẩm</td>
+                    <td data-th="Price">${o.name_prod}</td> 
+                    <td data-th="Quantity"><input class="form-control text-center" value="1" type="number"></td> 
+                    <td data-th="Subtotal" class="text-center">${o.price} $</td> 
+                    <td class="actions" data-th="">
+                        <!--button xóa khỏi giỏ hàng -->
+                        <form action="delete" method="post">
+                            <a href="delete?id_prod=${o.id_prod}">
+                                <button type="submit" class="btn btn-danger btn-sm">Xóa</button>
+                            </a>
+                        </form>
+                    </td> 
+                </tr> 
+            </c:forEach>
+            </tbody><tfoot> 
+                <tr class="visible-xs"> 
+                    <td class="text-center"><strong>Tổng 200 $</strong>
+                    </td> 
+                </tr> 
+                <tr> 
+                    <td><a href="home" class="btn btn-warning"><i class="fa fa-angle-left"></i> Tiếp tục mua hàng</a>
+                    </td> 
+                    <td colspan="2" class="hidden-xs"> </td> 
+                    <td class="hidden-xs text-center"><strong>Tổng tiền 200 $</strong>
+                    </td> 
+                    <td><a href="" class="btn btn-success btn-block">Thanh toán <i class="fa fa-angle-right"></i></a>
+                    </td> 
+                </tr> 
+            </tfoot> 
+        </table>
+    </div>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!--gallery-->
+    <section class="section section-gallery">
+        <div class="">
+            <div class="hot_sp" style="padding-top: 70px;padding-bottom: 50px;">
+                <h2 style="text-align:center;padding-top: 10px">
+                    <a style="font-size: 28px;color: black;text-decoration: none" href="">Khách hàng và Aristino</a>
+                </h2>
+            </div>
+            <div class="list-gallery clearfix">
+                <ul class="shoes-gp">
+                    <li>
+                        <div class="gallery_item">
+                            <img class="img-resize" src="images/blog/1.png" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="gallery_item">
+                            <img class="img-resize" src="images/blog/2.png" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="gallery_item">
+                            <img class="img-resize" src="images/blog/1.png" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="gallery_item">
+                            <img class="img-resize" src="images/blog/2.png" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="gallery_item">
+                            <img class="img-resize" src="images/blog/1.png" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="gallery_item">
+                            <img class="img-resize" src="images/blog/2.png" alt="">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="footer-col footer-block">
+                            <div class="footer-col footer-block">
+                                <h4 class="footer-title">
+                                    Giới thiệu
+                                </h4>
+                                <div class="footer-content">
+                                    <p>Aristino là  trang mua sắm trực tuyến của thương hiệu  thời trang nam, phụ kiện, giúp bạn
+                                        tiếp
+                                        cận xu hướng thời trang mới nhất.</p>
+                                    <div class="logo-footer">
+                                        <img src="images/logo-bct.png" alt="Bộ Công Thương">
+                                    </div>
+                                    <div class="social-list">
+                                        <a href="#" class="fab fa-facebook"></a>
+                                        <a href="#" class="fab fa-google"></a>
+                                        <a href="#" class="fab fa-twitter"></a>
+                                        <a href="#" class="fab fa-youtube"></a>
+                                        <a href="#" class="fab fa-skype"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="footer-col footer-link">
+                            <h4 class="footer-title">
+                                PHÁP LÝ &amp; CÂU HỎI
+                            </h4>
+                            <div class="footer-content toggle-footer">
+                                <ul>
+                                    <li class="item">
+                                        <a href="#" title="Tìm kiếm">Tìm kiếm</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#" title="Giới thiệu">Giới thiệu</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#" title="Chính sách đổi trả">Chính sách đổi trả</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#" title="Chính sách bảo mật">Chính sách bảo mật</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#" title="Điều khoản dịch vụ">Điều khoản dịch vụ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="footer-col footer-block">
+                            <h4 class="footer-title">
+                                Thông tin liên hệ
+                            </h4>
+                            <div class="footer-content toggle-footer">
+                                <ul>
+                                    <li><span>Địa chỉ:</span> Hạ Đình - Thanh Xuân- Việt Nam</li>
+                                    <li><span>Điện thoại:</span> +84 (028) 123456789</li>
+                                    <li><span>Fax:</span> +84 (028) 1982002</li>
+                                    <li><span>Mail:</span> contact@aristino.com</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="footer-col footer-block">
+                            <h4 class="footer-title">
+                                FANPAGE
+                            </h4>
+                            <div class="footer-content">
+                                <div id="fb-root">
+                                    <div class="footer-static-content">
+                                        <div class="fb-page" data-href="https://aristino.com/"
+                                             data-tabs="timeline" data-width="" data-height="215" data-small-header="false"
+                                             data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                                            <blockquote cite="https://aristino.com/"
+                                                        class="fb-xfbml-parse-ignore"><a
+                                                    href="https://aristino.com/">Aristino Viet Nam</a>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-footer--copyright">
+            <div class="container">
+                <hr>
+                <div class="main-footer--border" style="text-align:center;padding-bottom: 15px;">
+                    <p>Copyright © 2022<a href="https://aristino.com"> Runner Inn</a>. <a target="_blank"
+                                                                                          href="https://www.facebook.com/henrynguyen202">Powered by AnhLee</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script async defer crossorigin="anonymous" src="plugins/sdk.js"></script>
+    <script src="plugins/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <script src="plugins/bootstrap/popper.min.js"></script>
+    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="plugins/owl.carousel/owl.carousel.min.js"></script>
+    <script src="plugins/uikit/uikit.min.js"></script>
+    <script src="plugins/uikit/uikit-icons.min.js"></script>
+</body>
+
+</html>

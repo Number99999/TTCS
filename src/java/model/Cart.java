@@ -10,22 +10,52 @@ package model;
  */
 public class Cart {
 
-    static String id, count;
+    static int id, count, id_prod, id_user;
 
-    public Cart(String id, String count) {
-        this.id = id;
-        this.count = count;
+    public Cart() {
+        id = 0;
+        count = 0;
+        id_prod = 0;
+        id_user = 0;
     }
 
-    public static String getId() {
+    public Cart(int id, int count, int id_product, int id_username) {
+        this.id = id;
+        this.count = count;
+        this.id_prod = id_product;
+        this.id_user = id_username;
+    }
+
+    public static int getId() {
         return id;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public static void setId(int id) {
+        Cart.id = id;
     }
 
-    public static String getCount() {
+    public static int getCount() {
         return count;
     }
+
+    public static void setCount(int count) {
+        Cart.count = count;
+    }
+
+    public static int getId_prod() {
+        return id_prod;
+    }
+
+    public static void setId_prod(int id_prod) {
+        Cart.id_prod = id_prod;
+    }
+
+    public static int getId_user() {
+        return id_user;
+    }
+
+    public static void setId_user(int id_user) {
+        Cart.id_user = id_user;
+    }
+
 }

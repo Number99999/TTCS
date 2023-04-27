@@ -6,36 +6,50 @@ package model;
  */
 import model.*;
 
-public class product {
+public class Product {
 
-    private int id, price;
-    private String link_img, content, name, categories, chiTiet, tuKhoa;     //chưa kết nối giữa loại hàng và sản phẩm
+    String name_prod, link_img, content, categories, tuKhoa;
+    int soLuong, id_prod;
+    int price, id_seller;
 
-    public product(int id, String link_img, String name, String content, String categories, String chiTiet, String tuKhoa, int price) {
-        this.id = id;
-        this.link_img = link_img;
-        this.name = name;
+    public Product() {
+        id_prod = 0;
+        name_prod = "";
+        link_img = "";
+        content = "";
+        id_seller = 0;
+        categories = "";
+        tuKhoa = "";
+        soLuong = 0;
+        price = 0;
+    }
+
+    public Product(int id, String name, String link, String content, int id_seller, String categories, String tuKhoa, int soLuong, int gia) {
+        this.id_prod = id;
+        this.name_prod = name;
+        this.link_img = link;
         this.content = content;
+        this.id_seller = id_seller;
         this.categories = categories;
-        this.chiTiet = chiTiet;
         this.tuKhoa = tuKhoa;
-        this.price = price;
+        this.soLuong = soLuong;
+        this.price = gia;
     }
 
-    public int getId() {
-        return id;
+    public int getId_prod() {
+        return id_prod;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setId_prod(int id_prod) {
+        this.id_prod = id_prod;
     }
 
-    public int getPrice() {
-        return price;
+    public String getName_prod() {
+        return name_prod;
     }
 
-    public void setPrice(int price) {
-        this.price = price;
+    public void setName_prod(String name_prod) {
+        this.name_prod = name_prod;
     }
 
     public String getLink_img() {
@@ -54,12 +68,12 @@ public class product {
         this.content = content;
     }
 
-    public String getName() {
-        return name;
+    public int getId_seller() {
+        return id_seller;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setId_seller(int id_seller) {
+        this.id_seller = id_seller;
     }
 
     public String getCategories() {
@@ -70,20 +84,28 @@ public class product {
         this.categories = categories;
     }
 
-    public String getChiTiet() {
-        return chiTiet;
-    }
-
-    public void setChiTiet(String chiTiet) {
-        this.chiTiet = chiTiet;
-    }
-
     public String getTuKhoa() {
         return tuKhoa;
     }
 
     public void setTuKhoa(String tuKhoa) {
         this.tuKhoa = tuKhoa;
+    }
+
+    public int getSoLuong() {
+        return soLuong;
+    }
+
+    public void setSoLuong(int soLuong) {
+        this.soLuong = soLuong;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
     }
 
 }
